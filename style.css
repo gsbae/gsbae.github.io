@@ -3,38 +3,41 @@
 -----------------------------------------*/
 
 body{
-  background: #ffffff;
-  font-size: 14px;
-}
-
-.container{
-  padding-top: 80px;
-  padding-bottom: 120px;
+  background-color: #ffffff;
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 /*---------------------------------------
     navigation bar          
 -----------------------------------------*/
+.navbar{
+  color: #1f1f1f;
+}
+
 .nav-link, .navbar-brand{
   color: black;
   cursor: pointer;
 }
 
 .nav-link{
-  margin-right: 1em !important;
+  margin-left: 1em !important;
 }
 
-.nav-link:hover{
-  color: black;
-  text-decoration: underline;
+.navbar-brand:hover{
+  color: inherit;
 }
 
 .navbar-collapse{
   justify-content: flex-end;
 }
 
+.nav-link:hover {
+  color: #cc8800;
+}
+
 .nav-item-active {
-  text-decoration: underline;
+  text-decoration-line: line-through;
 }
 
 .icon-bar {
@@ -78,9 +81,39 @@ body{
 }
 
 /*---------------------------------------
-   header          
+  jumbotron         
 -----------------------------------------*/
 
-.description h1{
-  text-align: left;
+#intro{
+  padding-top: 10%;
+  background: #ECECEC;
+}
+
+#intro-text{
+  padding-top: 15%;
+}
+
+#portfolio-link{
+  color: #1f1f1f;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#portfolio-link:hover{
+  color: #cc8800;
+}
+
+/*---------------------------------------
+  portfolio        
+-----------------------------------------*/
+.portfolio{
+  padding-top: 10%;
+}
+
+#portfolio-section-1{
+  background: #D9A679;
+}
+
+#portfolio-section-2{
+  background: #BF625A;
 }
