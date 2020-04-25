@@ -6,6 +6,7 @@ body{
   background-color: #ffffff;
   font-size: 16px;
   overflow-x: hidden;
+  font-family: 'Karla', sans-serif;
 }
 
 /*---------------------------------------
@@ -22,6 +23,11 @@ body{
 
 .nav-link{
   margin-left: 1em !important;
+}
+
+.navbar-brand{
+  font-family: 'DM Serif Text', serif;
+  font-size: 25px;
 }
 
 .navbar-brand:hover{
@@ -81,16 +87,21 @@ body{
 }
 
 /*---------------------------------------
-  jumbotron         
+  introduction        
 -----------------------------------------*/
 
 #intro{
-  padding-top: 10%;
+  padding-top: 9%;
   background: #ECECEC;
+  z-index: 0;
 }
 
 #intro-text{
   padding-top: 15%;
+}
+
+#drawing{
+  width: 100%;
 }
 
 #portfolio-link{
@@ -103,17 +114,73 @@ body{
   color: #cc8800;
 }
 
+#flower-decor{
+  margin-top: -12.5%;
+}
+
+#flowers{
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+}
+
 /*---------------------------------------
   portfolio        
 -----------------------------------------*/
-.portfolio{
+#portfolio{
   padding-top: 10%;
 }
 
 #portfolio-section-1{
-  background: #D9A679;
+  background: #EDE8F7;
 }
 
 #portfolio-section-2{
-  background: #BF625A;
+  background: #D9A679;
+}
+
+#portfolio-section-3{
+  background: #BFCDCD;
+}
+
+#desktop-bunbun{
+  width: 100%;
+}
+
+/*---------------------------------------
+  about me       
+-----------------------------------------*/
+
+#about-me{
+  padding-top: 10%;
+}
+
+#about-img{
+  width: 100%;
+}
+
+#collage{
+  padding-top: 10%;
+}
+
+#collage-img{
+  width: 100%;
+}
+
+
+/*---------------------------------------
+ footer        
+-----------------------------------------*/
+
+.page-footer{
+  font-size: 1em;
+  font-family: 'Karla', sans-serif;
+}
+
+.footer-copyright{
+  padding-bottom: 1%;
+}
+
+#verse{
+  padding-top: 15%;
 }
