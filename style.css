@@ -93,7 +93,6 @@ body{
 #intro{
   padding-top: 9%;
   background: #ECECEC;
-  z-index: 0;
 }
 
 #intro-text{
@@ -167,6 +166,32 @@ body{
   width: 100%;
 }
 
+/*---------------------------------------
+ play       
+-----------------------------------------*/
+
+#play-intro{
+  padding-top: 12%;
+  background: #ECECEC;
+}
+
+#play-text{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#flower-decor-play{
+  padding-top: 3%;
+}
+
+#gallery{
+  margin-top: 5%;
+}
+
+#gallery img{
+  margin: 5%;
+  width: 90%;
+}
 
 /*---------------------------------------
  footer        
