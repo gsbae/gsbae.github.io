@@ -101,6 +101,10 @@ body{
   padding-top: 15%;
 }
 
+#intro-text h1{
+  font-family: 'DM Serif Text', serif;
+}
+
 #drawing{
   width: 100%;
 }
@@ -109,6 +113,7 @@ body{
   color: #1f1f1f;
   font-weight: bold;
   text-decoration: underline;
+  padding-bottom: 15%;
 }
 
 #portfolio-link:hover{
@@ -122,22 +127,46 @@ body{
 #flowers{
   position: relative;
   max-width: 100%;
-  z-index: 1;
 }
 
 /*---------------------------------------
   portfolio        
 -----------------------------------------*/
-#portfolio{
-  padding-top: 10%;
+.portfolio{
+  padding-top: 15%;
 }
 
 #portfolio-section-1{
-  background: #EDE8F7;
+  margin: 0;
+}
+
+#portfolio-section-1 a{
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+#buntitle{
+  background-color: #EDE8F7;
+  width: 230px;
+}
+
+.proj-desc{
+  margin-top: 6%;
+  padding-left: 5%;
+}
+
+.proj-desc h3{
+  font-family: 'DM Serif Text', serif;
+}
+
+.proj-link{
+  text-decoration: underline;
 }
 
 #portfolio-section-2{
-  background: #D9A679;
+  text-decoration: none2;
+  color: #1f1f1f;
+  /*background: #D9A679;*/
 }
 
 #portfolio-section-3{
