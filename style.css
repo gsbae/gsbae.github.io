@@ -92,14 +92,15 @@ body{
   introduction        
 -----------------------------------------*/
 
-#home{
-  margin-top: 60px;
+#intro{
+  margin-top: 55px;
+  max-height: 100%;
   background: #ECECEC;
 }
 
 #intro-text{
-  padding-top: 15%;
-  padding-bottom: 15%;
+  margin-top: 15%;
+  margin-bottom: 15%;
 }
 
 #intro-text h1{
@@ -107,6 +108,7 @@ body{
 }
 
 #drawing{
+  margin-top: 10%;
   max-width: 100%;
 }
 
