@@ -27,6 +27,10 @@ body{
   margin-left: 1em !important;
 }
 
+.nav-item-active{
+  text-decoration: line-through;
+}
+
 .navbar-brand{
   font-family: 'DM Serif Text', serif;
   font-size: 25px;
@@ -42,10 +46,6 @@ body{
 
 .nav-link:hover {
   color: #cc8800;
-}
-
-.nav-item-active {
-  text-decoration-line: line-through;
 }
 
 .icon-bar {
@@ -92,13 +92,14 @@ body{
   introduction        
 -----------------------------------------*/
 
-#intro{
-  padding-top: 9%;
+#home{
+  margin-top: 60px;
   background: #ECECEC;
 }
 
 #intro-text{
   padding-top: 15%;
+  padding-bottom: 15%;
 }
 
 #intro-text h1{
@@ -106,7 +107,7 @@ body{
 }
 
 #drawing{
-  width: 100%;
+  max-width: 100%;
 }
 
 #portfolio-link{
@@ -121,7 +122,7 @@ body{
 }
 
 #flower-decor{
-  margin-top: -12.5%;
+  margin-top: -12%;
 }
 
 #flowers{
@@ -140,14 +141,41 @@ body{
   margin: 0;
 }
 
-#portfolio-section-1 a{
+.projtitle{
+  text-decoration: none;
+  color: #1f1f1f;
+}
+
+.projtitle:hover{
   text-decoration: none;
   color: #1f1f1f;
 }
 
 #buntitle{
-  background-color: #EDE8F7;
+  border-bottom: 8px solid #cfdbc5;
   width: 230px;
+}
+
+#buntitle.hvr-sweep-to-top:before{
+  background: #cfdbc5;
+}
+
+#fttitle{
+  border-bottom: 8px solid #EDE8F7;
+  width: 325px;
+}
+
+#fttitle.hvr-sweep-to-top:before{
+  background: #EDE8F7;
+}
+
+#schooltitle{
+  border-bottom: 8px solid #f3d7ca;
+  width: 345px;
+}
+
+#schooltitle.hvr-sweep-to-top:before{
+  background: #f3d7ca;
 }
 
 .proj-desc{
@@ -161,12 +189,6 @@ body{
 
 .proj-link{
   text-decoration: underline;
-}
-
-#portfolio-section-2{
-  text-decoration: none2;
-  color: #1f1f1f;
-  /*background: #D9A679;*/
 }
 
 #portfolio-section-3{
@@ -264,3 +286,101 @@ resume
   text-decoration: none;
   color: #cc8800;
 }
+
+/*---------------------------------------
+ animations       
+-----------------------------------------*/
+
+/* Sweep To Top */
+.hvr-sweep-to-top {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-top:hover:before, .hvr-sweep-to-top:focus:before, .hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+/* Icon Forward */
+.hvr-icon-forward {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+.hvr-icon-forward .hvr-icon {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+  -webkit-transform: translateX(4px);
+  transform: translateX(4px);
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #cc8800;
+  height: 2px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
