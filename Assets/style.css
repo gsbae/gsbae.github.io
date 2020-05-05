@@ -15,7 +15,7 @@ body{
     navigation bar          
 -----------------------------------------*/
 .navbar{
-  color: #1f1f1f;
+  color: #1f1f1f; 
 }
 
 .nav-link, .navbar-brand{
@@ -28,7 +28,7 @@ body{
 }
 
 .nav-item-active{
-  text-decoration: line-through;
+  text-decoration: line-through; /*current link*/
 }
 
 .navbar-brand{
@@ -37,7 +37,7 @@ body{
 }
 
 .navbar-brand:hover{
-  color: inherit;
+  color: inherit; 
 }
 
 .navbar-collapse{
@@ -62,6 +62,7 @@ body{
   background: transparent !important;
 }
  
+ /*collpased navbar transformations*/
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
   transform-origin: 10% 10%;
@@ -95,11 +96,11 @@ body{
 #intro{
   margin-top: 55px;
   max-height: 100%;
-  background: #ECECEC;
+  background: #ECECEC; 
 }
 
 #intro-text{
-  margin-top: 15%;
+  margin-top: 15%; /*space for navbar*/
   margin-bottom: 15%;
 }
 
@@ -108,11 +109,11 @@ body{
 }
 
 #drawing{
-  margin-top: 10%;
+  margin-top: 10%; 
   max-width: 100%;
 }
 
-#portfolio-link{
+#portfolio-link{ /*link to work below*/
   color: #1f1f1f;
   font-weight: bold;
   text-decoration: underline;
@@ -124,7 +125,7 @@ body{
 }
 
 #flower-decor{
-  margin-top: -12%;
+  margin-top: -12%; /*overlap intro*/
 }
 
 #flowers{
@@ -143,43 +144,50 @@ body{
   margin: 0;
 }
 
-.projtitle{
+.projtitle{ /*all project links*/
   text-decoration: none;
   color: #1f1f1f;
 }
 
-.projtitle:hover{
+.projtitle:hover{ /*remove default link decoration*/
   text-decoration: none;
   color: #1f1f1f;
 }
 
-#buntitle{
+/*colored underlines for titles*/
+#buntitle{ 
   border-bottom: 8px solid #cfdbc5;
   width: 230px;
 }
 
+/*swipe to top animation color*/
 #buntitle.hvr-sweep-to-top:before{
   background: #cfdbc5;
 }
 
+/*colored underlines for titles*/
 #fttitle{
   border-bottom: 8px solid #EDE8F7;
   width: 325px;
 }
 
+/*swipe to top animation color*/
 #fttitle.hvr-sweep-to-top:before{
   background: #EDE8F7;
 }
 
+/*colored underlines for titles*/
 #schooltitle{
   border-bottom: 8px solid #f3d7ca;
   width: 345px;
 }
 
+/*swipe to top animation color*/
 #schooltitle.hvr-sweep-to-top:before{
   background: #f3d7ca;
 }
 
+/*project description*/
 .proj-desc{
   margin-top: 6%;
   padding-left: 5%;
@@ -189,17 +197,11 @@ body{
   font-family: 'DM Serif Text', serif;
 }
 
+/*view project link*/
 .proj-link{
   text-decoration: underline;
 }
 
-#portfolio-section-3{
-  background: #BFCDCD;
-}
-
-#desktop-bunbun{
-  width: 100%;
-}
 
 /*---------------------------------------
   about me       
@@ -221,24 +223,29 @@ body{
  play       
 -----------------------------------------*/
 
+/*header of play page*/
 #play-intro{
   padding-top: 15%;
   background: #ECECEC;
 }
 
+/*text in header*/
 #play-text{
   padding-left: 20%;
   padding-right: 20%;
 }
 
+/*flower image in header*/
 #flower-decor-play{
   padding-top: 3%;
 }
 
+/*margin of gallery*/
 #gallery{
   margin-top: 5%;
 }
 
+/*padding between images*/
 #gallery img{
   margin: 5%;
   width: 90%;
@@ -252,6 +259,7 @@ resume
   padding-top: 20%;
 }
 
+/*email link*/
 .email{
   color: #cc8800;
 }
@@ -260,6 +268,7 @@ resume
   color: #cc8800;
 }
 
+/*cover the whole page*/
 #full-page{
   height: 75vh;
 }
@@ -290,10 +299,11 @@ resume
 }
 
 /*---------------------------------------
- animations       
+ animations 
+ credit to https://ianlunn.github.io/Hover/      
 -----------------------------------------*/
 
-/* Sweep To Top */
+/* Sweep To Top Animation*/
 .hvr-sweep-to-top {
   display: inline-block;
   vertical-align: middle;
@@ -306,6 +316,7 @@ resume
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .hvr-sweep-to-top:before {
   content: "";
   position: absolute;
@@ -331,7 +342,7 @@ resume
   transform: scaleY(1);
 }
 
-/* Icon Forward */
+/* Icon Forward Animation*/
 .hvr-icon-forward {
   display: inline-block;
   vertical-align: middle;
@@ -341,6 +352,7 @@ resume
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s;
 }
+
 .hvr-icon-forward .hvr-icon {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
@@ -351,12 +363,13 @@ resume
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
   -webkit-transform: translateX(4px);
   transform: translateX(4px);
 }
 
-/* Underline From Left */
+/* Underline From Left Animation */
 .hvr-underline-from-left {
   display: inline-block;
   vertical-align: middle;
@@ -366,6 +379,7 @@ resume
   position: relative;
   overflow: hidden;
 }
+
 .hvr-underline-from-left:before {
   content: "";
   position: absolute;
@@ -382,6 +396,7 @@ resume
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
   right: 0;
 }
