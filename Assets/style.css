@@ -9,9 +9,10 @@ body{
   overflow-x: hidden;
   font-family: 'Karla', sans-serif;
   padding-bottom: 10%;
+  margin-top: 100px;
 }
 
-/*---------------------------------------
+/*-------------------------------------
     navigation bar          
 -----------------------------------------*/
 .navbar{
@@ -94,7 +95,6 @@ body{
 -----------------------------------------*/
 
 #intro{
-  margin-top: 55px;
   max-height: 100%;
   background: #ECECEC; 
 }
@@ -205,10 +205,10 @@ body{
 
 /*---------------------------------------
   about me       
------------------------------------------*/
+------------------------------------------*/
 
 #about-me{
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 #about-img{
@@ -225,14 +225,13 @@ body{
 
 /*header of play page*/
 #play-intro{
-  padding-top: 15%;
   background: #ECECEC;
 }
 
 /*text in header*/
 #play-text{
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-top: 5%;
+  width: 50%; 
 }
 
 /*flower image in header*/
@@ -256,7 +255,8 @@ resume
 -----------------------------------------*/
 
 #resume-req{
-  padding-top: 20%;
+  padding-top: 10%;
+  padding-bottom: 25%;
 }
 
 /*email link*/
@@ -268,9 +268,48 @@ resume
   color: #cc8800;
 }
 
-/*cover the whole page*/
-#full-page{
-  height: 75vh;
+#resume-footer{
+  position: fixed;
+}
+
+
+
+/*---------------------------------------
+projects      
+-----------------------------------------*/
+
+.content-title{
+  padding-top: 75px;
+  padding-bottom: 150px;
+}
+ 
+ .content-title h2{
+  font-family: 'DM Serif Text', serif;
+}
+
+.content-details{
+  padding-top: 75px;
+}
+
+.content-details h5{
+  font-family: 'DM Serif Text', serif;
+}
+
+.content-details a{
+  text-decoration: none;
+  color: #cc8800;
+}
+
+.content-details p{
+  font-size: 14px;
+}
+
+.content-img{
+  padding-top: 8px;
+}
+
+.content-img img{
+  max-width: 100%;
 }
 
 /*---------------------------------------
@@ -281,7 +320,8 @@ resume
   font-size: 1em;
   font-family: 'Karla', sans-serif;
   position: absolute;
-  bottom: 2.5%;
+  bottom: 0;
+  height: 5rem;
   width: 100%;
 }
 
