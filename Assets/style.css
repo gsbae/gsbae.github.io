@@ -234,6 +234,10 @@ body{
   width: 50%; 
 }
 
+#play-text h1{
+  font-family: 'DM Serif Text', serif;
+}
+
 /*flower image in header*/
 #flower-decor-play{
   padding-top: 3%;
