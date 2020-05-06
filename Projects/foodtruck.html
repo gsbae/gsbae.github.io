@@ -1,1 +1,306 @@
-foodtruck.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grace Bae</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../Assets/bootstrap/css/bootstrap.min.css"> 
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+    <!-- Animation Library -->
+     <link rel="stylesheet" href="../Assets/aos-2/dist/aos.css" />
+
+     <!-- Icons -->
+     <link rel="icon" href="../Assets/images/favicon.png" type="image/png" sizes="16x16">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../Assets/style.css">
+
+    <!-- JSS -->
+    <script src="../Assets/main.js" type="text/javascript"></script>
+    <script src="../Assets/jquery-3.5.0.min.js"></script>
+</head>
+  
+<body>
+
+ <!-- NAVBAR -->
+<nav data-aos="fade-down" data-aos-duration="800" class="navbar fixed-top navbar-expand-md bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">gsbae</a>
+
+    <!-- collapsed navbar-->
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#main-navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon-bar top-bar"></span>
+      <span class="icon-bar middle-bar"></span>
+      <span class="icon-bar bottom-bar"></span>
+    </button>
+
+    <!-- navbar links -->
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="../index.html#portfolio-section-1">work</a>
+          </li>
+           <li class="nav-item">
+              <a class="nav-link" href="../about.html">about</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../play.html">play</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="../resume.html">resume</a>
+          </li>
+
+      </ul>
+    </div> 
+  </div> 
+</nav>
+
+
+<main>
+
+<!-- project title -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 content-title text-center">
+            <h2>Food Truck Employee App</h2>
+            <p>A responsive app designed to reduce the stress of food truck employees by helping them stay organized and work efficiently</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- project background -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 content-details">
+            <h4>Defining our goal</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 mr-auto subcontent-details">
+            <h5>Stakeholder Values Diagram</h5>
+            <p>In order to understand what the food truck industry needed, we needed to brainstorm the goals and values of each stakeholder: the customers, owners, and employees. Before doing so, we researched and conducted  user interviews of each stakeholder at local foodtrucks in Pittsburgh. We then applied our findings when brainstorming the goals and values of each stakeholder.  </p>
+            <p>After brainstorming and discussing these different values and goals, we realized that the employees have a significant impact on both the customers and owners sides and are neecessary to running the business smoothly.</p>
+        </div>
+        <div class="col-6 subcontent-details">
+            <img class="w-100" src="ft-imgs/ft-stakeholder.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 subcontent-details">
+            <h5>Our Scenario</h5>
+            <p>We created a more detailed scenario to communicate our solution </p>
+            <br>
+            <p>"Maddie works at the Mexican food truck part-time for extra cash on the weekdays. She enjoys spending the time to converse with her customers, as she is a very sociable twenty two-year-old. However, when the line gets long, she feels immense pressure to speed up her work and becomes scatterbrained from stress. The
+orders are scribbled on paper that she clips onto the bar, and sometimes they fall off and drop to the ground.
+Thus, she sometimes forgets to include certain orders and as a result has to spend a longer amount of time to
+prepare the food. </p>
+            <p>Fortunately, Maddie recently started using a mobile application that organized customer orders for her and lists them neatly throughout a screen, which allows her to work through her orders without the anxiety of accidentally losing an order that would have been scribbled on loose paper. A customer comes up to Maddie now and orders two fish tacos, chicken salad, a medium bag of nachos, and two more sodas. She taps the order into the app and it displays it as she rushes off to prepare it. The process is quick and efficient, and before long the customer receives the food and happily walks off with it."</p>
+        </div>
+    </div>
+
+     <div class="row">
+        <div class="col-12 subcontent-details">
+            <h5>Goal Refinement</h5>
+            <p>Initially, our goal was to help employees become more organized with their orders and to work more efficiently. However, we realized that the employees' need to stay organized may stem from something deeper.</p>
+            <p>As a result, our goal was to help reduce the stress of food truck employees and make the employee feel confient and competent by providing a way in which they can maintain organization and work efficiently during busy work hours.</p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-12 content-details">
+            <h4>Wireframes</h4>
+            <p>Although we are designing a responsive app, we created our first prototype for mobile onyl to prioirtize and focus on main functionalities. Our first prototype consisted of a list of all of the orders for our main page: </p>
+            <ul class="top-bullet">
+                <li> Key features: current orders, aggregating
+        food items by type, and past orders</li>
+                <li>Current orders: special notes, list in order
+        from oldest to newest order (priority),
+        estimated cooking time</li>
+                <li>Aggregating items: unsure of how we
+        wanted to display the aggregated items, also
+        had several different ideas on what we
+        would group together such as main
+        ingredients and specific items</li>
+                <li>Past orders: price of each order, earnings per
+        day, most popular food items of that day,
+        search by name on each order, filtering</li>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 subcontent-details">
+            <h5>Mobile Wireframes</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 content-img">
+            <img src="ft-imgs/Current Orders-1.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/Current Orders-2.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/Current Orders-3.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/Current Orders-4.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6 mr-auto content-details">
+            <h4>Think-Aloud Testing</h4>
+            <ul class="top-bullet">
+                <li> Combined items feature was confusing for many
+                    <ul>
+                        <li>Difficult to match special notes to order items when using this feature</li>
+                        <li> Concern over making items too far in advance and food not being fresh</li>
+                    </ul>
+                </li>
+
+                <li> Past orders concluded to be very useful but needs refinement
+                </li>
+
+                <li>Organization of order items and order content mostly good
+                    <ul>
+                        <li>Need to know which special notes correspond with which items</li>
+                    </ul>
+                </li>
+
+                <li> Concern over logistical usability of the website
+                    <ul>
+                        <li>Employees are both handling food and having to physically touch the screen to access website functionality</li>
+                        <li>Numerous Employees confirmed that this should not be an area for concern as removal of gloves is frequently required</li>
+                    </ul>
+                </li>
+
+        </ul>
+    </div>
+
+    <div class="col-5 content-details">
+            <img class="w-100" src="ft-imgs/ft-testing.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 content-details">
+            <h4>Iteration 1</h4>
+            <p>Modifications to we tried to make the aggregation feature more intuitive and embedded in the current order lists</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 content-details">
+            <h4>Final Designs</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 subcontent-details">
+            <h5>Final Mobile</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4 content-img">
+            <img src="ft-imgs/ft-mf1.png">
+        </div>
+        <div class="col-4 content-img">
+            <img src="ft-imgs/ft-mf2.png">
+        </div>
+        <div class="col-4 content-img">
+            <img src="ft-imgs/ft-mf3.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 content-img">
+            <img src="ft-imgs/ft-mf4.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 subcontent-details">
+            <h5>Final Ipad</h5>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 content-img">
+            <img src="ft-imgs/ft-df1.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/ft-df2.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/ft-df3.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/ft-df4.png">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-3 content-img">
+            <img src="ft-imgs/ft-df5.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/ft-df6.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/ft-df7.png">
+        </div>
+        <div class="col-3 content-img">
+            <img src="ft-imgs/ft-df8.png">
+        </div>
+    </div>
+
+
+
+</main>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <hr>
+    <!-- Copyright-->
+    <div class="footer-copyright float-left">copyright © 2020 grace bae</div>
+
+      <div class="float-right">
+        <a href="mailto:grcbae@gmail.com" class="fa fa-envelope"></a>
+        <a href="https://www.linkedin.com/in/grace-bae/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/gsbae" class="fa fa-github"></a>
+      </div>         
+
+    </div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="../Assets/aos-2/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+</body>
+
+
+
+</html>
