@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
 
     <!-- Animation Library -->
-     <link rel="stylesheet" href="Assets/aos-2/dist/aos.css" />
+     <link rel="stylesheet" href="Assets/aos-2/dist/aos.css"/>
 
      <!-- Icons -->
      <link rel="icon" href="Assets/images/favicon.png" type="image/png" sizes="16x16">
@@ -64,44 +64,77 @@
 </nav>
 
 <!-- Intro Section -->
-<header id="intro">
-  <div class="container">
-      <div class="row">
-        <div data-aos="fade-down" data-aos-duration="800" class="col-md-5" id="intro-text">
-          <h1>Hello there, I'm Grace</h1>
-          <p>currently under construction</p>
-          <!--<p> I love to create things to help people grow!</p>
-          <p> We all have room to grow in some aspect and to better ourselves in some way, so I'm here to do my part and help achieve this in any way!</p>
-          <br>
-          link to projects 
-          <a href="#portfolio-section-1" id="portfolio-link">Check out some of my work below!</a>
-        -->
-        </div>
-        <div class="col-md-7">
-          <img src="Assets/images/me.png" class="img-fluid" id="drawing">  
-        </div>
-       </div> 
-    </div> 
+<div id="intro" class="container-fluid">
+    <div class="container" id="intro-main">
+        <div class="row">
+          <div data-aos="fade-down" data-aos-duration="800" class="col-md-5" id="intro-text">
+            <h1>Hello there, I'm Grace</h1>
+            <p> I love to create things that help people grow!</p>
+            <p> I believe we all have room to grow in some aspect, so I'm here to do my part and help others achieve this through data science and ux design and everything in between!</p>
+            <br>
+            <a href="#portfolio-section-1" id="portfolio-link">Check out some of my work below!</a>
+          
+          </div>
 
-    <!-- flower drawings -->
-    <div data-aos="fade-up" data-aos-duration="800" class="container-fluid" id="flower-decor">
-    <img src="Assets/images/flowers.png" class="img-fluid" id="flowers">
+          <!-- drawing of me -->
+          <div class="col-md-7">
+            <img src="Assets/images/me.png" class="img-fluid" id="drawing">  
+          </div>
+
+        
+      </div>
+
+
   </div>
-</header>
 
-<main><
+  <!-- flower drawings -->
+<div data-aos="fade-up" data-aos-duration="800">
+    <img src="Assets/images/flowers.png" class="img-fluid" id="flower-decor">
+  </div>  
+</div>
+
+</div>
+
+
+<main>
+
 <!-- Portfolio Section -->
 
 <!-- project 1 -->
 <div class="container d-flex"> 
-  <div class = "row portfolio" id="portfolio-section-1">
+  <div class = "row portfolio justify-content-centered" id="portfolio-section-1">
+    
+     <!-- project 1 title and text-->
+    <div data-aos="fade-left" data-aos-duration="800" class="col-12 col-md-6 text-left proj-desc">
+      <a class = "projtitle" href="Projects/classroom.html">
+        <h3 class="hvr-sweep-to-top" id="schooltitle">Star vs. LRG Two-Step Model</h3>
+      </a>
+      <br>
+      <p>Trained a two-step model to classify astronomical unknown objects and estimate distances of the predicted LRGs from the Earth</p>
+      <p>Statistical Research Methods Spring 2018</p>
+      <a class = "projtitle hvr-icon-forward" href="Projects/classroom.html">
+        <p class="proj-link">View project <i class="fa fa-long-arrow-right hvr-icon"></i></p>
+      </a>
+    </div>
 
-    <!-- project 1 image -->
+    <!-- project 1 image-->
+    <div data-aos="fade-right" data-aos-duration="800" class="col-12 col-md-5 proj-img proj-img-full">
+      <img class="img-fluid" id="lrg-img "src="Assets/images/lrg.jpg">
+    </div>
+
+  </div>
+</div>
+
+<!-- project 2 -->
+<div class="container d-flex"> 
+  <div class = "row portfolio" id="portfolio-section-2">
+
+    <!-- project 2 image -->
     <div data-aos="fade-right" data-aos-duration="800" class="col-12 col-md-7 proj-img">
       <img class="img-fluid" src="Assets/images/bunbun.png">
     </div>
 
-    <!-- project 1 title and text -->
+    <!-- project 2 title and text -->
     <div data-aos="fade-left" data-aos-duration="800" class="col-12 col-md-5 text-left proj-desc">
       <a class = "projtitle" href="Projects/bunbun.html">
         <h3 class="hvr-sweep-to-top" id="buntitle">Bun Bun Bakeshop</h3>
@@ -117,11 +150,11 @@
   </div>
 </div>
 
-<!-- project 2 -->
+<!-- project 3 -->
 <div class="container d-flex"> 
-  <div class = "row portfolio" id="portfolio-section-2">
+  <div class = "row portfolio" id="portfolio-section-3">
 
-    <!-- project 2 title and text-->
+    <!-- project 3 title and text-->
     <div data-aos="fade-right" data-aos-duration="800" class="col-12 col-md-6 text-left proj-desc">
       <a class = "projtitle" href="Projects/foodtruck.html">
         <h3 class="hvr-sweep-to-top" id="fttitle">Food Truck Employee App</h3>
@@ -134,7 +167,7 @@
       </a>
     </div>
 
-    <!-- project 2 image -->
+    <!-- project 3 image -->
     <div data-aos="fade-left" data-aos-duration="800" class="col-12 col-md-6 proj-img">
       <img class="img-fluid" src="Assets/images/foodtruck.png">
     </div>
@@ -142,31 +175,33 @@
   </div>
 </div>
 
-<!-- project 3 
-<div class="container d-flex"> 
-  <div class = "row portfolio" id="portfolio-section-2">
 
-    project 3 image
-    <div data-aos="fade-right" data-aos-duration="800" class="col-12 col-md-6 proj-img">
-      <img class="img-fluid" src="Assets/images/school.png">
+
+<!-- project 4 -->
+<div class="container d-flex"> 
+  <div class = "row portfolio" id="portfolio-section-4">
+
+    <!-- project 4 image -->
+    <div data-aos="fade-left" data-aos-duration="800" class="col-12 col-md-6 proj-img proj-img-full">
+      <img class="img-fluid" src="Assets/images/vui.jpeg">
     </div>
-    
-     project 3 title and text
-    <div data-aos="fade-left" data-aos-duration="800" class="col-12 col-md-6 text-left proj-desc">
-      <a class = "projtitle" href="Projects/classroom.html">
-        <h3 class="hvr-sweep-to-top" id="schooltitle">Interactive Class Dashboard</h3>
+
+    <!-- project 4 title and text-->
+    <div data-aos="fade-right" data-aos-duration="800" class="col-12 col-md-6 text-left proj-desc">
+      <a class = "projtitle" href="Projects/foodtruck.html">
+        <h3 class="hvr-sweep-to-top" id="vuititle">Voice UI Conversation</h3>
       </a>
       <br>
-      <p>Interactive dashboard for students and teachers for project presentations</p>
+      <p>Designed conversation for voice interfaces in self-driving vehicles </p>
       <p>Interactive Design Project Spring 2019</p>
-      <a class = "projtitle hvr-icon-forward" href="Projects/classroom.html">
+      <a class = "projtitle hvr-icon-forward" href="Projects/foodtruck.html">
         <p class="proj-link">View project <i class="fa fa-long-arrow-right hvr-icon"></i></p>
       </a>
     </div>
 
 
   </div>
-</div>-->
+</div>
 
 </main>
 

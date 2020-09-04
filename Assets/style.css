@@ -9,7 +9,7 @@ body{
   overflow-x: hidden;
   font-family: 'Karla', sans-serif;
   padding-bottom: 10%;
-  margin-top: 100px;
+  padding-top: 5%;
 }
 
 /*-------------------------------------
@@ -17,7 +17,10 @@ body{
 -----------------------------------------*/
 .navbar{
   color: #1f1f1f; 
+  padding-top: 1em;
+  padding-bottom: 1em; 
 }
+
 
 .nav-link, .navbar-brand{
   color: black;
@@ -29,7 +32,7 @@ body{
 }
 
 .nav-item-active{
-  text-decoration: line-through; /*current link*/
+  text-decoration: underline; /*current link*/
 }
 
 .navbar-brand{
@@ -94,24 +97,21 @@ body{
   introduction        
 -----------------------------------------*/
 
+
 #intro{
-  max-height: 100%;
   background: #ECECEC; 
+  position: relative;
 }
 
 #intro-text{
-  margin-top: 15%; /*space for navbar*/
-  margin-bottom: 15%;
+  margin-top: 20%; /*space for navbar*/
+  margin-bottom: 20%;
 }
 
 #intro-text h1{
   font-family: 'DM Serif Text', serif;
 }
 
-#drawing{
-  margin-top: 10%; 
-  max-width: 100%;
-}
 
 #portfolio-link{ /*link to work below*/
   color: #1f1f1f;
@@ -124,24 +124,25 @@ body{
   color: #cc8800;
 }
 
-#flower-decor{
-  margin-top: -12%; /*overlap intro*/
+#drawing{
+  padding-top: 15%;
 }
 
-#flowers{
-  position: relative;
-  max-width: 100%;
+#flower-decor{
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
+
 
 /*---------------------------------------
   portfolio        
 -----------------------------------------*/
-.portfolio{
-  padding-top: 15%;
-}
 
-#portfolio-section-1{
-  margin: 0;
+
+.portfolio{
+  float:center;
+  padding-top: 15%;
 }
 
 .projtitle{ /*all project links*/
@@ -179,12 +180,23 @@ body{
 /*colored underlines for titles*/
 #schooltitle{
   border-bottom: 8px solid #f3d7ca;
-  width: 345px;
+  width: 350px;
 }
 
 /*swipe to top animation color*/
 #schooltitle.hvr-sweep-to-top:before{
   background: #f3d7ca;
+}
+
+/*colored underlines for titles*/
+#vuititle{
+  border-bottom: 8px solid #f0f5fa;
+  width: 270px;
+}
+
+/*swipe to top animation color*/
+#vuititle.hvr-sweep-to-top:before{
+  background: #f0f5fa;
 }
 
 /*project description*/
@@ -197,11 +209,14 @@ body{
   font-family: 'DM Serif Text', serif;
 }
 
+.proj-img-full{
+  padding-left: 10%;
+}
+
 /*view project link*/
 .proj-link{
   text-decoration: underline;
 }
-
 
 /*---------------------------------------
   about me       
@@ -209,6 +224,7 @@ body{
 
 #about-me{
   padding-top: 5%;
+  padding-bottom: 10%;
 }
 
 #about-img{
