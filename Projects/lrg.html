@@ -79,13 +79,57 @@
 
 <!-- project goals -->
 <div class="container">
-    <div class="row">
+      <div class="row">
         <div class="col-12 content-details">
-            <h5>Goal:</h5>
-            <p>This project was an introductory project to HTML, CSS, and Javascript without the use of any additional frameworks or libraries. The goal of this project was to create an e-commerce website for a small. bakery, Bun Bun Bakeshop where customers could browse and shop for their specialty cinnamon buns.</p>
-            <p>I wanted this website to contain the traditional home page, product browsing page, product detail page, shopping cart, and about us page. While doing so, I also wanted to create a cozy environment for the customers on the website to relate the experience to buying these products in person as much as possible. I used a warm and neutral color palette and tried to be as personal as a business can be. </p>
+            <h4>Breakdown</h4>
+        </div>
+      </div>
+
+    <div class="row">
+        <div class="col-12 mr-auto subcontent-details">
+            <h5>1. Conduct univariate and bivariate exploratory analysis</h5>
+            <p>Through this initial exploration, we found that there was an imbalance of classes in the data, so we decided to move forward by balancing the classes. We also found any correlations in our variables and selected features that would be most effective in our model</p>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-12 mr-auto subcontent-details">
+            <h5>2. Train classification model</h5>
+            <p>We then trained multiple classification models to best predict whether or not the unknown project was a star or a large red galaxy.</p>
+            <p>We trained a logistic regression model, decision trees, random forest, XGBoost, and KNN in which XGBoost had the lowest misclassification rate with random forest coming at a close second.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mr-auto subcontent-details">
+            <h5>3. Train regression model</h5>
+            <p>We then trained multiple regression models to best predict the distance between the earth and objects that were already classified as large red galaxies.</p>
+            <p>We trained a linear regression model, ridge regression, lasso regression, GAM, regression tree, random forest, gradient boosting, and KNN in which graident boosting had the lowest mean squared error with GAM coming at a close second.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 mr-auto subcontent-details">
+            <h5>4. Train two-step model model</h5>
+            <p>We then needed to know which classification and regression models worked best together, so we trained multiple pairings. First, we predicted the unknown object, and given the objects that were predicted as large red galaxies, we then predicted its distance from the earth.</p>
+            <p>We evaluted the best model pairings based on sum of the misclassification rate and mean squared error and found that XGBoost and Random Forest performed the best with a sum of 24</p>
+        </div>
+    </div>
+
+    <!-- final poster -->
+  <div class="row">
+    <div class="col-12 content-details">
+        <h4>Final Poster Presentation</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 content-details">
+        <img id="poster" src="LRG.png">
+    </div>
+  </div>
+    
+</div>
+
 
 </main>
 

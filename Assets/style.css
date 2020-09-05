@@ -180,7 +180,7 @@ body{
 /*colored underlines for titles*/
 #schooltitle{
   border-bottom: 8px solid #f3d7ca;
-  width: 350px;
+  width: 200px;
 }
 
 /*swipe to top animation color*/
@@ -202,20 +202,19 @@ body{
 /*project description*/
 .proj-desc{
   margin-top: 6%;
-  padding-left: 5%;
 }
 
 .proj-desc h3{
   font-family: 'DM Serif Text', serif;
 }
 
-.proj-img-full{
-  padding-left: 10%;
-}
-
 /*view project link*/
 .proj-link{
   text-decoration: underline;
+}
+
+#portfolio-section{
+  margin: auto;
 }
 
 /*---------------------------------------
@@ -300,7 +299,7 @@ projects
 
 .content-title{
   padding-top: 75px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   line-height: 20px;
 }
  
@@ -353,6 +352,11 @@ projects
   font-size: 14px;
 }
 
+#poster{
+  width: 80%;
+  margin: auto;
+  display: block;
+}
 /*---------------------------------------
  footer        
 -----------------------------------------*/
